@@ -1,0 +1,29 @@
+#login_handler.py
+
+MAX_LOGIN_ATTEMPTS = 3
+CORRECT_USERNAME = "your_username"
+CORRECT PASSWORD = "you# login_handler.py
+
+MAX_LOGIN_ATTEMPTS = 3
+CORRECT_USERNAME = "your_username"
+CORRECT_PASSWORD = "your_password"
+
+def main():
+    attempts = 0
+    while attempts < MAX_LOGIN_ATTEMPTS:
+        username = input("Enter username: ")
+        password = input("Enter password: ")
+
+        if username == CORRECT_USERNAME and password == CORRECT_PASSWORD:
+            print("Login successful!")
+            break
+        else:
+            attempts += 1
+            print(f"Invalid credentials. {MAX_LOGIN_ATTEMPTS - attempts} attempts left.")
+
+    if attempts == MAX_LOGIN_ATTEMPTS:
+        print("Too many incorrect login attempts. Account locked.")
+
+if __name__ == "__main__":
+    main()
+r_password"
